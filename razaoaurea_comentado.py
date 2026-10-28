@@ -280,3 +280,57 @@ print("Conclusão: r_c < r1. A adição de isolante diminui imediatamente a perd
 
 # As respostas teóricas (a, b, c, d, e, f) permanecem idênticas às já fornecidas 
 # em formato de comentário no passo anterior.
+
+# ==============================================================================
+# 12. Questões Finais (Respostas)
+# ==============================================================================
+
+# a) Qual mecanismo físico é responsável pela diminuição da perda de calor com o aumento da espessura neste caso?
+# O aumento da espessura (e) introduz uma nova camada de material com baixa 
+# condutividade térmica (k). Esta camada atua como uma barreira física que 
+# aumenta drasticamente a resistência térmica de condução (R_cond)[cite: 30]. Como a 
+# perda de calor (q') é inversamente proporcional à resistência térmica total, o 
+# aumento da espessura reduz a taxa de transferência de calor da tubulação para 
+# o ambiente[cite: 30].
+
+# b) Por que a minimização de CE(e), isoladamente, não representa o problema econômico completo?
+# Se minimizássemos apenas o custo da energia perdida (CE), a matemática apontaria 
+# para uma espessura de isolante tendendo ao infinito (e -> ∞), pois quanto mais 
+# espesso for o isolante, menor será o calor perdido[cite: 30]. No entanto, isolantes 
+# custam dinheiro[cite: 30]. O problema económico completo (C(e)) exige o equilíbrio 
+# (trade-off) entre poupar energia e o custo de investimento (CI) de instalar e 
+# comprar mais volume de material isolante[cite: 30].
+
+# c) Qual a principal diferença entre a atualização do intervalo na razão áurea e a construção de novas aproximações pela interpolação quadrática?
+# O método da Razão Áurea baseia-se numa redução geométrica constante (fator τ) do 
+# intervalo de incerteza que contém o mínimo, avaliando apenas o sinal da função[cite: 31]. 
+# Ele é lento (linear), mas incondicionalmente seguro e garantido a convergir[cite: 32]. A 
+# Interpolação Quadrática, por outro lado, ajusta uma parábola usando os três 
+# pontos atuais e salta diretamente para o vértice dessa parábola[cite: 32]. Esse salto pode 
+# levar rapidamente ao mínimo real (convergência superlinear), mas é um método 
+# arriscado que pode divergir ou exigir proteções computacionais se a curva não 
+# tiver formato de parábola (A <= 0)[cite: 32].
+
+# d) Qual método exigiu menos avaliações de C(e)? A resposta se manteve ao variar os pontos iniciais da interpolação?
+# A Interpolação Quadrática geralmente exige muito menos avaliações da função C(e) 
+# porque o salto direto para o vértice da parábola acelera a convergência[cite: 32]. 
+# Contudo, esta eficiência extrema depende fortemente da escolha dos três pontos 
+# iniciais (x1, x2, x3)[cite: 32]. Se os pontos iniciais estiverem muito longe do mínimo ou 
+# não englobarem corretamente o "vale" da curva, o método quadrático pode acionar as 
+# rotinas de proteção (fazendo passos de razão áurea) ou perder a eficiência. 
+# A razão áurea tem um número de avaliações previsível e constante.
+
+# e) Por que é importante impor limites físicos para a espessura do isolamento?
+# Matematicamente, a função custo pode apresentar comportamentos indesejados para 
+# valores extremos, como espessuras negativas (que não têm sentido físico)[cite: 30] ou 
+# espessuras excessivamente grandes. Limites físicos (como [0, 0.12] m) garantem 
+# que o algoritmo procure o mínimo numa zona onde a construção e instalação do 
+# isolamento são tecnicamente viáveis para a tubulação[cite: 30], impedindo que as raízes 
+# divirjam para soluções abstratas.
+
+# f) Se a tubulação operasse por um tempo muito menor, como você esperaria que a espessura ótima se alterasse?
+# Se o tempo de operação acumulado (t) fosse muito menor, a parcela relativa ao 
+# custo da energia térmica perdida (CE) seria substancialmente menor no cômputo do 
+# custo total (C)[cite: 30]. Sendo a energia gasta menor, o investimento financeiro para 
+# comprar grandes espessuras de isolante deixaria de ser justificável. O mínimo 
+# económico deslocar-se-ia, resultando numa espessura ótima menor (menos isolante)[cite: 30].
