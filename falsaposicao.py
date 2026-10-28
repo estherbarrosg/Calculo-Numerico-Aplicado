@@ -62,8 +62,6 @@ U = Q / (B * Hr)
 print(f"\nVelocidade média U = {U:.4f} m/s")
 
 
-# falsa posição generico 
-
 import math
 
 def falsa_posicao(f, a, b, tol=1e-6, max_iter=100):
@@ -129,6 +127,9 @@ limite_b = 2.0
 
 print("INICIANDO O MÉTODO DA FALSA POSIÇÃO...")
 raiz_estimada = falsa_posicao(equacao_exemplo, limite_a, limite_b, tol=1e-6)
+
+if raiz_estimada is not None:
+    print(f"A raiz da função é aproximadamente: x = {raiz_estimada:.8f}")
 
 if raiz_estimada is not None:
     print(f"A raiz da função é aproximadamente: x = {raiz_estimada:.8f}")
