@@ -6,17 +6,23 @@
 **Discente:** Esther Barros Gomes
 
 ### Motivação
-Este repositório armazena as implementações computacionais desenvolvidas ao longo da disciplina. Os códigos focam na resolução de problemas práticos de engenharia através da transição entre a análise matemática teórica e algoritmos numéricos.
+Este repositório armazena as implementações computacionais desenvolvidas ao longo da disciplina. O objetivo central é a transição rigorosa entre a fundamentação matemática teórica e a construção de algoritmos numéricos eficientes para a modelagem e solução de problemas práticos de engenharia. O repositório funciona como uma apostila didática digital dos métodos numéricos codificados.
 
 ### Topologia do Repositório
-O repositório apresenta o seguinte particionamento lógico para acomodar o código, dados e imagens:
+O repositório adota um particionamento lógico estrito para segregar os Programas para Casa (PPCs) avaliativos das implementações de treino e exercícios de fixação. Cada diretório de prática possui sua própria documentação interna (`README.md`), rotinas executáveis em Python e os respectivos dados de saída:
 
 ```text
 Calculo-Numerico-Aplicado/
-├── README.md (Este arquivo, com metadados gerais)
+├── README.md (Metadados globais, motivação e topologia da disciplina)
+├── Treino_Raizes_de_Funcoes/
+│   ├── README.md (Dicionário de variáveis, I/O e escopo do método)
+│   ├── bissecao.py (Algoritmo numérico do método da bissecção)
+│   ├── problema_canal.py (Aplicação prática do método numérico)
+│   └── outputs/
+│       └── resultados_bissecao.txt (Resultados numéricos exportados)
 └── PPC_01/
-    ├── README.md (Documentação do escopo do código)
-    ├── ppc1_esther_gomes.py (Script principal)
+    ├── README.md (Documentação e fundamentação da atividade avaliativa)
+    ├── ppc1_esther_gomes.py (Script de processamento principal)
     └── outputs/
         ├── grafico_1_stokes_St.png
         ├── grafico_2_refinamento_h.png
