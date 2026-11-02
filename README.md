@@ -14,12 +14,11 @@ O repositório adota um particionamento lógico estrito para segregar os Program
 ```text
 Calculo-Numerico-Aplicado/
 ├── README.md (Metadados globais, motivação e topologia da disciplina)
-├── Treino_Raizes_de_Funcoes/
-│   ├── README.md (Dicionário de variáveis, I/O e escopo do método)
-│   ├── bissecao.py (Algoritmo numérico do método da bissecção)
-│   ├── problema_canal.py (Aplicação prática do método numérico)
-│   └── outputs/
-│       └── resultados_bissecao.txt (Resultados numéricos exportados)
+└── Treino_Raizes_de_Funcoes/
+    ├── README.md
+    ├── bissecao.py
+    ├── falsa_posicao.py
+    └── outputs/
 └── PPC_01/
     ├── README.md (Documentação e fundamentação da atividade avaliativa)
     ├── ppc1_esther_gomes.py (Script de processamento principal)
